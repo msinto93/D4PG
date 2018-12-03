@@ -166,7 +166,7 @@ class Learner:
             # Save ckpt periodically
             if train_step % train_params.SAVE_CKPT_STEP == 0:
                 self.saver.save(self.sess, self.checkpoint_path, global_step=train_step)
-                sys.stdout.write('\n Checkpoint saved.')   
+                sys.stdout.write('\nCheckpoint saved.\n')   
                 sys.stdout.flush() 
         
         # Stop the agents

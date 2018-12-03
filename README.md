@@ -1,11 +1,13 @@
-# Deep Distributed Distributional Deterministic Policy Gradients (D4PG)
-A Tensorflow implementation of a [**Deep Distributed Distributional Deterministic Policy Gradients (D4PG)**](https://arxiv.org/abs/1804.08617) network, for continuous control.
+# Distributed Distributional Deep Deterministic Policy Gradients (D4PG)
+A Tensorflow implementation of a [**Distributed Distributional Deep Deterministic Policy Gradients (D4PG)**](https://arxiv.org/abs/1804.08617) network, for continuous control.
+
+D4PG builds on the Deep Deterministic Policy Gradients (DDPG) approach ([paper](https://arxiv.org/pdf/1509.02971.pdf), [code](https://github.com/msinto93/DDPG)), making several improvements including the introduction of a distributional critic, using distributed agents running on multiple threads to collect experiences, prioritised experience replay (PER) and N-step returns.
 
 ![](http://wwdabney.gitlab.io/img/distributional_bellman.png)
 
 Trained on [OpenAI Gym environments](https://gym.openai.com/envs).
 
-This implementation has been successfully trained and tested on the [Pendulum-v0](https://gym.openai.com/envs/Pendulum-v0/), [BipedalWalker-v2](https://gym.openai.com/envs/BipedalWalker-v2/) and [LunarLanderContinuous-v2](https://gym.openai.com/envs/LunarLanderContinuous-v2/) environments. This code can however be run on any environment with a low-dimensional state space and continuous action space.
+This implementation has been successfully trained and tested on the [Pendulum-v0](https://gym.openai.com/envs/Pendulum-v0/), [BipedalWalker-v2](https://gym.openai.com/envs/BipedalWalker-v2/) and [LunarLanderContinuous-v2](https://gym.openai.com/envs/LunarLanderContinuous-v2/) environments. This code can however be run on any environment with a low-dimensional (non-image) state space and continuous action space.
 
 **This currently holds the high score for the Pendulum-v0 environment on the [OpenAI leaderboard](https://github.com/openai/gym/wiki/Leaderboard#pendulum-v0)**
 

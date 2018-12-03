@@ -68,7 +68,7 @@ Result of training the D4PG on the 'LunarLanderContinuous-v2' environment:
 
 | **Environment**      | **Best 100-episode performance** | **Ckpt file** |
 |----------------------|----------------------------------|---------------|
-| Pendulum-v0          |  -123.11 +- 6.85                 | ckpt-660000   |
+| Pendulum-v0          |  -123.11 +- 6.86                 | ckpt-660000   |
 
 ## To-do
 - Train/test on further environments, including [Mujoco](http://www.mujoco.org/)

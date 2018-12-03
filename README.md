@@ -35,9 +35,9 @@ This will train the network on the specified environment and periodically save c
 
 To test the saved checkpoints during training, run
 ```
-  $ ./run_every_new_ckpt.sh
+  $ ./test_every_new_ckpt.py
 ```
-This shell script should be run alongside the training script, allowing to periodically test the latest network as it trains. This script will monitor the `/ckpts` folder and run the `test.py` script on the latest checkpoint every time a new checkpoint is saved. Test results are saved to a text file in the `/test_results` folder (optional).
+This should be run alongside the training script, allowing to periodically test the latest checkpoints as the network trains. This script will invoke the `run_every_new_ckpt.sh` shell script which monitors the given checkpoint directory and runs the `test.py` script on the latest checkpoint every time a new checkpoint is saved. Test results are saved to a text file in the `/test_results` folder (optional).
 
 Once we have a trained network, we can visualise its performance in the environment by running
 ```

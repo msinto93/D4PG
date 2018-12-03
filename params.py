@@ -42,8 +42,8 @@ class train_params:
     DENSE2_SIZE = 300               # Size of second hidden layer in networks
     FINAL_LAYER_INIT = 0.003        # Initialise networks' final layer weights in range +/-final_layer_init
     NUM_ATOMS = 51                  # Number of atoms in output layer of distributional critic
-    V_MIN = -10.0                   # Lower bound of critic value output distribution
-    V_MAX = 10.0                    # Upper bound of critic value output distribution (V_min and V_max should be chosen based on the range of normalised reward values in the chosen env)
+    V_MIN = -20.0                   # Lower bound of critic value output distribution
+    V_MAX = 20.0                    # Upper bound of critic value output distribution (V_min and V_max should be chosen based on the range of normalised reward values in the chosen env)
     TAU = 0.001                     # Parameter for soft target network updates
     USE_BATCH_NORM = False          # Whether or not to use batch normalisation in the networks
   

@@ -42,16 +42,16 @@ class train_params:
     DENSE2_SIZE = 300               # Size of second hidden layer in networks
     FINAL_LAYER_INIT = 0.003        # Initialise networks' final layer weights in range +/-final_layer_init
     NUM_ATOMS = 51                  # Number of atoms in output layer of distributional critic
-    V_MIN = -20.0                   # Lower bound of critic value output distribution
-    V_MAX = 0.0                     # Upper bound of critic value output distribution (V_min and V_max should be chosen based on the range of normalised reward values in the chosen env)
+    V_MIN = -10.0                   # Lower bound of critic value output distribution
+    V_MAX = 10.0                    # Upper bound of critic value output distribution (V_min and V_max should be chosen based on the range of normalised reward values in the chosen env)
     TAU = 0.001                     # Parameter for soft target network updates
     USE_BATCH_NORM = False          # Whether or not to use batch normalisation in the networks
   
     # Files/Directories
-    SAVE_CKPT_STEP = 10000          # Save checkpoint every save_ckpt_step training steps
-    CKPT_DIR = './ckpts'            # Directory for saving/loading checkpoints
-    CKPT_FILE = None                # Checkpoint file to load and resume training from (if None, train from scratch)
-    LOG_DIR = './logs/train'        # Directory for saving Tensorboard logs (if None, do not save logs)
+    SAVE_CKPT_STEP = 10000                  # Save checkpoint every save_ckpt_step training steps
+    CKPT_DIR = './ckpts/' + ENV             # Directory for saving/loading checkpoints
+    CKPT_FILE = None                        # Checkpoint file to load and resume training from (if None, train from scratch)
+    LOG_DIR = './logs/train/' + ENV         # Directory for saving Tensorboard logs (if None, do not save logs)
     
     
 class test_params:
@@ -66,10 +66,10 @@ class test_params:
     MAX_EP_LENGTH = 1000                                    # Maximum number of steps per episode
     
     # Files/directories
-    CKPT_DIR = './ckpts'                                    # Directory for saving/loading checkpoints
+    CKPT_DIR = './ckpts/' + ENV                             # Directory for saving/loading checkpoints
     CKPT_FILE = None                                        # Checkpoint file to load and test (if None, load latest ckpt)
     RESULTS_DIR = './test_results'                          # Directory for saving txt file of results (if None, do not save results)
-    LOG_DIR = './logs/test'                                 # Directory for saving Tensorboard logs (if None, do not save logs)
+    LOG_DIR = './logs/test/' + ENV                          # Directory for saving Tensorboard logs (if None, do not save logs)
 
 
 class play_params:
@@ -83,7 +83,7 @@ class play_params:
     MAX_EP_LENGTH = 1000                                    # Maximum number of steps per episode
     
     # Files/directories
-    CKPT_DIR = './ckpts'                                    # Directory for saving/loading checkpoints
+    CKPT_DIR = './ckpts/' + ENV                             # Directory for saving/loading checkpoints
     CKPT_FILE = None                                        # Checkpoint file to load and run (if None, load latest ckpt)
     RECORD_DIR = './video'                                  # Directory to store recorded gif of gameplay (if None, do not record)
 

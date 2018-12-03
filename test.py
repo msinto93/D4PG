@@ -1,6 +1,6 @@
 '''
 ## Test ##
-# Test a trained D4PG network. This can be run alongside training by running 'run_every_new_ckpt.sh'.
+# Test a trained D4PG network. This can be run alongside training by running 'test_every_new_ckpt.py'.
 @author: Mark Sinton (msinto93@gmail.com) 
 '''
 

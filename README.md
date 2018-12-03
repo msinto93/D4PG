@@ -1,2 +1,56 @@
-# D4PG
-Tensorflow implementation of a Deep Distributed Distributional Deterministic Policy Gradients (D4PG) network, trained on OpenAI Gym environments.
+# Deep Distributed Distributional Deterministic Policy Gradients (D4PG)
+A Tensorflow implementation of a [**Deep Distributed Distributional Deterministic Policy Gradients (D4PG)**](https://arxiv.org/abs/1804.08617) network, for continuous control.
+
+![](http://wwdabney.gitlab.io/img/distributional_bellman.png)
+
+Trained on [OpenAI Gym environments](https://gym.openai.com/envs).
+
+This implementation has been successfully trained and tested on the [Pendulum-v0](https://gym.openai.com/envs/Pendulum-v0/), [BipedalWalker-v2](https://gym.openai.com/envs/BipedalWalker-v2/) and [LunarLanderContinuous-v2](https://gym.openai.com/envs/LunarLanderContinuous-v2/) environments. This code can however be run on any environment with a low-dimensional state space and continuous action space.
+
+**This currently holds the high score for the Pendulum-v0 environment on the [OpenAI leaderboard](https://github.com/openai/gym/wiki/Leaderboard#pendulum-v0)**
+
+## Requirements
+Note: Versions stated are the versions I used, however this will still likely work with other versions.
+
+- Ubuntu 16.04 (Most (non-Atari) envs will also work on Windows)
+- python 3.5
+- [OpenAI Gym](https://github.com/openai/gym) 0.10.8 (See link for installation instructions + dependencies)
+- [tensorflow-gpu](https://www.tensorflow.org/) 1.5.0
+- [numpy](http://www.numpy.org/) 1.15.2
+- [scipy](http://www.scipy.org/install.html) 1.1.0
+- [opencv-python](http://opencv.org/) 3.4.0
+- [imageio](http://imageio.github.io/) 2.4.1 (requires [pillow](https://python-pillow.org/))
+- [inotify-tools](https://github.com/rvoicilas/inotify-tools/wiki) 3.14
+
+## Usage
+The default environment is 'Pendulum-v0'. To use a different environment simply change the `ENV` parameter in `params.py` before running the following files.
+
+To train the D4PG network, run
+```
+  $ python train.py
+```
+This will train the network on the specified environment and periodically save checkpoints to the `/ckpts` folder.
+
+To test the saved checkpoints during training, run
+```
+  $ ./run_every_new_ckpt.sh
+```
+This shell script should be run alongside the training script, allowing to periodically test the latest network as it trains. This script will monitor the `/ckpts` folder and run the `test.py` script on the latest checkpoint every time a new checkpoint is saved. Test results are saved to a text file in the `/test_results` folder (optional).
+
+Once we have a trained network, we can visualise its performance in the environment by running
+```
+  $ python play.py
+```
+This will play the environment on screen using the trained network and save a GIF (optional).
+
+**Note:** To reproduce the best 100-episode performance of **-123.11 +/- 6.86** that achieved the top score on the ['Pendulum-v0' OpenAI leaderboard](https://github.com/openai/gym/wiki/Leaderboard#pendulum-v0), run
+```
+  $ python test.py
+```
+specifying the `test_params.ckpt_file` parameter in `params.py` as `Pendulum-v0.ckpt-660000`.
+
+## References
+- [A Distributional Perspective on Reinforcement Learning](http://wwdabney.gitlab.io/publication/distributional-perspective/)
+
+## License
+MIT License

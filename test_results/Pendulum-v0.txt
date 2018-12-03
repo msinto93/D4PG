@@ -1,0 +1,200 @@
+Training Episode 10000: 	 Average reward = -214.38 +/- 16.95 /ep 
+
+Training Episode 20000: 	 Average reward = -135.26 +/- 8.54 /ep 
+
+Training Episode 30000: 	 Average reward = -135.14 +/- 7.54 /ep 
+
+Training Episode 40000: 	 Average reward = -130.13 +/- 7.68 /ep 
+
+Training Episode 50000: 	 Average reward = -132.71 +/- 8.17 /ep 
+
+Training Episode 60000: 	 Average reward = -127.20 +/- 7.52 /ep 
+
+Training Episode 70000: 	 Average reward = -131.09 +/- 7.92 /ep 
+
+Training Episode 80000: 	 Average reward = -138.48 +/- 7.69 /ep 
+
+Training Episode 90000: 	 Average reward = -128.12 +/- 7.56 /ep 
+
+Training Episode 100000: 	 Average reward = -129.75 +/- 7.69 /ep 
+
+Training Episode 110000: 	 Average reward = -128.72 +/- 7.51 /ep 
+
+Training Episode 120000: 	 Average reward = -124.66 +/- 7.06 /ep 
+
+Training Episode 130000: 	 Average reward = -125.72 +/- 7.13 /ep 
+
+Training Episode 140000: 	 Average reward = -125.62 +/- 7.21 /ep 
+
+Training Episode 150000: 	 Average reward = -125.42 +/- 7.11 /ep 
+
+Training Episode 160000: 	 Average reward = -126.91 +/- 7.28 /ep 
+
+Training Episode 170000: 	 Average reward = -125.28 +/- 7.09 /ep 
+
+Training Episode 180000: 	 Average reward = -125.54 +/- 7.12 /ep 
+
+Training Episode 190000: 	 Average reward = -125.22 +/- 7.08 /ep 
+
+Training Episode 200000: 	 Average reward = -125.55 +/- 7.11 /ep 
+
+Training Episode 210000: 	 Average reward = -125.16 +/- 7.06 /ep 
+
+Training Episode 220000: 	 Average reward = -125.18 +/- 7.07 /ep 
+
+Training Episode 230000: 	 Average reward = -125.69 +/- 7.20 /ep 
+
+Training Episode 240000: 	 Average reward = -126.09 +/- 7.31 /ep 
+
+Training Episode 250000: 	 Average reward = -125.18 +/- 7.06 /ep 
+
+Training Episode 260000: 	 Average reward = -125.22 +/- 7.06 /ep 
+
+Training Episode 270000: 	 Average reward = -126.08 +/- 7.16 /ep 
+
+Training Episode 280000: 	 Average reward = -127.16 +/- 7.22 /ep 
+
+Training Episode 290000: 	 Average reward = -125.88 +/- 7.01 /ep 
+
+Training Episode 300000: 	 Average reward = -124.86 +/- 7.03 /ep 
+
+Training Episode 310000: 	 Average reward = -124.74 +/- 7.00 /ep 
+
+Training Episode 320000: 	 Average reward = -125.15 +/- 7.03 /ep 
+
+Training Episode 330000: 	 Average reward = -124.38 +/- 7.09 /ep 
+
+Training Episode 340000: 	 Average reward = -124.00 +/- 7.05 /ep 
+
+Training Episode 350000: 	 Average reward = -123.58 +/- 6.94 /ep 
+
+Training Episode 360000: 	 Average reward = -124.97 +/- 7.11 /ep 
+
+Training Episode 370000: 	 Average reward = -124.23 +/- 7.11 /ep 
+
+Training Episode 380000: 	 Average reward = -124.64 +/- 7.00 /ep 
+
+Training Episode 390000: 	 Average reward = -126.10 +/- 7.44 /ep 
+
+Training Episode 400000: 	 Average reward = -124.52 +/- 7.01 /ep 
+
+Training Episode 410000: 	 Average reward = -124.64 +/- 7.02 /ep 
+
+Training Episode 420000: 	 Average reward = -125.97 +/- 7.18 /ep 
+
+Training Episode 430000: 	 Average reward = -123.27 +/- 6.89 /ep 
+
+Training Episode 440000: 	 Average reward = -123.45 +/- 6.89 /ep 
+
+Training Episode 450000: 	 Average reward = -126.96 +/- 7.24 /ep 
+
+Training Episode 460000: 	 Average reward = -123.32 +/- 6.89 /ep 
+
+Training Episode 470000: 	 Average reward = -124.58 +/- 6.99 /ep 
+
+Training Episode 480000: 	 Average reward = -123.68 +/- 7.01 /ep 
+
+Training Episode 490000: 	 Average reward = -123.90 +/- 7.05 /ep 
+
+Training Episode 500000: 	 Average reward = -123.76 +/- 6.91 /ep 
+
+Training Episode 510000: 	 Average reward = -124.10 +/- 7.02 /ep 
+
+Training Episode 520000: 	 Average reward = -123.81 +/- 7.05 /ep 
+
+Training Episode 530000: 	 Average reward = -123.53 +/- 6.95 /ep 
+
+Training Episode 540000: 	 Average reward = -123.34 +/- 6.89 /ep 
+
+Training Episode 550000: 	 Average reward = -126.10 +/- 7.47 /ep 
+
+Training Episode 560000: 	 Average reward = -125.46 +/- 7.11 /ep 
+
+Training Episode 570000: 	 Average reward = -123.83 +/- 7.06 /ep 
+
+Training Episode 580000: 	 Average reward = -124.91 +/- 7.38 /ep 
+
+Training Episode 590000: 	 Average reward = -124.67 +/- 7.29 /ep 
+
+Training Episode 600000: 	 Average reward = -123.30 +/- 6.89 /ep 
+
+Training Episode 610000: 	 Average reward = -123.29 +/- 6.89 /ep 
+
+Training Episode 620000: 	 Average reward = -123.65 +/- 7.01 /ep 
+
+Training Episode 630000: 	 Average reward = -123.20 +/- 6.88 /ep 
+
+Training Episode 640000: 	 Average reward = -123.59 +/- 7.02 /ep 
+
+Training Episode 650000: 	 Average reward = -123.32 +/- 6.91 /ep 
+
+Training Episode 660000: 	 Average reward = -123.11 +/- 6.86 /ep 
+
+Training Episode 670000: 	 Average reward = -123.69 +/- 7.03 /ep 
+
+Training Episode 680000: 	 Average reward = -123.56 +/- 7.00 /ep 
+
+Training Episode 690000: 	 Average reward = -124.69 +/- 7.08 /ep 
+
+Training Episode 700000: 	 Average reward = -123.46 +/- 6.90 /ep 
+
+Training Episode 710000: 	 Average reward = -124.39 +/- 6.96 /ep 
+
+Training Episode 720000: 	 Average reward = -123.71 +/- 7.03 /ep 
+
+Training Episode 730000: 	 Average reward = -123.30 +/- 6.87 /ep 
+
+Training Episode 740000: 	 Average reward = -123.21 +/- 6.88 /ep 
+
+Training Episode 750000: 	 Average reward = -123.66 +/- 7.01 /ep 
+
+Training Episode 760000: 	 Average reward = -123.27 +/- 6.88 /ep 
+
+Training Episode 770000: 	 Average reward = -125.94 +/- 7.41 /ep 
+
+Training Episode 780000: 	 Average reward = -124.27 +/- 6.95 /ep 
+
+Training Episode 790000: 	 Average reward = -123.79 +/- 7.02 /ep 
+
+Training Episode 800000: 	 Average reward = -124.75 +/- 7.10 /ep 
+
+Training Episode 810000: 	 Average reward = -124.74 +/- 7.09 /ep 
+
+Training Episode 820000: 	 Average reward = -123.72 +/- 7.03 /ep 
+
+Training Episode 830000: 	 Average reward = -124.29 +/- 6.95 /ep 
+
+Training Episode 840000: 	 Average reward = -124.58 +/- 6.95 /ep 
+
+Training Episode 850000: 	 Average reward = -123.76 +/- 7.03 /ep 
+
+Training Episode 860000: 	 Average reward = -123.33 +/- 6.88 /ep 
+
+Training Episode 870000: 	 Average reward = -124.60 +/- 7.01 /ep 
+
+Training Episode 880000: 	 Average reward = -124.75 +/- 7.10 /ep 
+
+Training Episode 890000: 	 Average reward = -123.24 +/- 6.88 /ep 
+
+Training Episode 900000: 	 Average reward = -123.64 +/- 7.01 /ep 
+
+Training Episode 910000: 	 Average reward = -123.42 +/- 6.89 /ep 
+
+Training Episode 920000: 	 Average reward = -124.56 +/- 7.02 /ep 
+
+Training Episode 930000: 	 Average reward = -123.32 +/- 6.88 /ep 
+
+Training Episode 940000: 	 Average reward = -124.03 +/- 7.02 /ep 
+
+Training Episode 950000: 	 Average reward = -123.27 +/- 6.86 /ep 
+
+Training Episode 960000: 	 Average reward = -123.69 +/- 7.02 /ep 
+
+Training Episode 970000: 	 Average reward = -124.20 +/- 6.95 /ep 
+
+Training Episode 980000: 	 Average reward = -125.01 +/- 6.93 /ep 
+
+Training Episode 990000: 	 Average reward = -123.46 +/- 6.88 /ep 
+
+Training Episode 1000000: 	 Average reward = -123.29 +/- 6.86 /ep 
+

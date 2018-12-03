@@ -78,6 +78,6 @@ Result of training the D4PG on the 'LunarLanderContinuous-v2' environment:
 - [Distributed Distributional Deterministic Policy Gradients](https://arxiv.org/abs/1804.08617)
 - [OpenAI Baselines - Prioritised Experience Replay implementation](https://github.com/openai/baselines/blob/master/baselines/deepq/replay_buffer.py)
 - [OpenAI Baselines - Segment Tree implementation](https://github.com/openai/baselines/blob/master/baselines/common/segment_tree.py)
-
+- [DeepMind TRFL Library - L2 Projection](https://github.com/deepmind/trfl/blob/master/trfl/dist_value_ops.py)
 ## License
 MIT License

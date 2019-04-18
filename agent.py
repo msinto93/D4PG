@@ -90,7 +90,8 @@ class Agent:
         self.sess.run(self.update_op)
         
         # Initialise var for logging episode reward
-        self.sess.run(self.init_reward_var)
+        if train_params.LOG_DIR is not None:
+            self.sess.run(self.init_reward_var)
         
         # Initially set threading event to allow agent to run until told otherwise
         run_agent_event.set()

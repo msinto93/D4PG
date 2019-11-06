@@ -1,4 +1,4 @@
-import gym
+from utils.env_wrapper import PendulumWrapper, LunarLanderContinuousWrapper, BipedalWalkerWrapper
 
 class train_params:
     
@@ -9,13 +9,21 @@ class train_params:
     NUM_AGENTS = 4                          # Number of distributed agents to run simultaneously
     
     # Create dummy environment to get all environment params
-    dummy_env = gym.make(ENV)      
-    STATE_DIMS = dummy_env.observation_space.shape
-    STATE_BOUND_LOW = dummy_env.observation_space.low
-    STATE_BOUND_HIGH = dummy_env.observation_space.high
-    ACTION_DIMS = dummy_env.action_space.shape
-    ACTION_BOUND_LOW = dummy_env.action_space.low
-    ACTION_BOUND_HIGH = dummy_env.action_space.high
+    if ENV == 'Pendulum-v0':
+        dummy_env = PendulumWrapper()
+    elif ENV == 'LunarLanderContinuous-v2':
+        dummy_env = LunarLanderContinuousWrapper()
+    elif ENV == 'BipedalWalker-v2':
+        dummy_env = BipedalWalkerWrapper()
+    else:
+        raise Exception('Chosen environment does not have an environment wrapper defined. Please choose an environment with an environment wrapper defined, or create a wrapper for this environment in utils.env_wrapper.py')
+     
+    STATE_DIMS = dummy_env.get_state_dims()
+    STATE_BOUND_LOW, STATE_BOUND_HIGH = dummy_env.get_state_bounds()
+    ACTION_DIMS = dummy_env.get_action_dims()
+    ACTION_BOUND_LOW, ACTION_BOUND_HIGH = dummy_env.get_action_bounds()
+    V_MIN = dummy_env.v_min
+    V_MAX = dummy_env.v_max
     del dummy_env
     
     # Training parameters
@@ -42,8 +50,6 @@ class train_params:
     DENSE2_SIZE = 300               # Size of second hidden layer in networks
     FINAL_LAYER_INIT = 0.003        # Initialise networks' final layer weights in range +/-final_layer_init
     NUM_ATOMS = 51                  # Number of atoms in output layer of distributional critic
-    V_MIN = -20.0                   # Lower bound of critic value output distribution
-    V_MAX = 0.0                    # Upper bound of critic value output distribution (V_min and V_max should be chosen based on the range of normalised reward values in the chosen env)
     TAU = 0.001                     # Parameter for soft target network updates
     USE_BATCH_NORM = False          # Whether or not to use batch normalisation in the networks
   

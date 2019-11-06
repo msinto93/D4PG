@@ -49,26 +49,26 @@ This will play the environment on screen using the trained network and save a GI
 ```
   $ python test.py
 ```
-specifying the `test_params.ckpt_file` parameter in `params.py` as `Pendulum-v0.ckpt-660000`.
+specifying the `train_params.ENV` and `test_params.CKPT_FILE` parameters in `params.py` as `Pendulum-v0` and `Pendulum-v0.ckpt-660000` respectively.
 
 ## Results
 Result of training the D4PG on the 'Pendulum-v0' environment:
 
 ![](/video/Pendulum-v0.gif)
 
+Result of training the D4PG on the 'LunarLanderContinuous-v2' environment:
+
+![](/video/LunarLanderContinuous-v2.gif)
+
 Result of training the D4PG on the 'BipedalWalker-v2' environment:
 
 *To-Do*
 ![](/video/BipedalWalker-v2.gif)
 
-Result of training the D4PG on the 'LunarLanderContinuous-v2' environment:
-
-*To-Do*
-![](/video/LunarLanderContinuous-v2.gif)
-
-| **Environment**      | **Best 100-episode performance** | **Ckpt file** |
-|----------------------|----------------------------------|---------------|
-| Pendulum-v0          |  -123.11 +- 6.86                 | ckpt-660000   |
+| **Environment**           | **Best 100-episode performance** | **Ckpt file** |
+|---------------------------|----------------------------------|---------------|
+| Pendulum-v0               |  -123.11 +/- 6.86                | ckpt-660000   |
+| LunarLanderContinuous-v2  |   290.87 +/- 2.00                | ckpt-320000   |
 
 ## To-do
 - Train/test on further environments, including [Mujoco](http://www.mujoco.org/)

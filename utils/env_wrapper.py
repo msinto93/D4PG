@@ -109,18 +109,23 @@ class LunarLanderContinuousWrapper(EnvWrapper):
         return reward/10.0
     
 class BipedalWalkerWrapper(EnvWrapper):
-    def __init__(self):  
+    def __init__(self, hardcore=False):  
         
-        EnvWrapper.__init__(self, 'BipedalWalker-v2')
+        if hardcore:
+            EnvWrapper.__init__(self, 'BipedalWalkerHardcore-v2')
+        else:
+            EnvWrapper.__init__(self, 'BipedalWalker-v2')
               
         # Reward is given for moving forward, total 300+ points up to the far end. If the robot falls, it gets -100. 
         # Applying motor torque costs a small amount of points, more optimal agent will get better score. 
         # State consists of hull angle speed, angular velocity, horizontal speed, vertical speed, position of joints and joints angular speed, legs contact with ground, and 10 lidar rangefinder measurements. 
         # There's no coordinates in the state vector.
         
+        # Hardcore version contains ladders, stumps, pitfalls. Time limit is increased due to obstacles.
+        
         # Lower and upper bounds of critic value output distribution, these will vary with environment
         # V_min and V_max should be chosen based on the range of normalised reward values in the chosen env
-        self.v_min = -40.0
+        self.v_min = -20.0
         self.v_max = 40.0
         
     def normalise_state(self, state):

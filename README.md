@@ -62,13 +62,15 @@ Result of training the D4PG on the 'LunarLanderContinuous-v2' environment:
 
 Result of training the D4PG on the 'BipedalWalker-v2' environment:
 
-*To-Do*
 ![](/video/BipedalWalker-v2.gif)
 
 | **Environment**           | **Best 100-episode performance** | **Ckpt file** |
 |---------------------------|----------------------------------|---------------|
 | Pendulum-v0               |  -123.11 +/- 6.86                | ckpt-660000   |
 | LunarLanderContinuous-v2  |   290.87 +/- 2.00                | ckpt-320000   |
+| BipedalWalker-v2          |   304.62 +/- 0.13                | ckpt-940000   |
+
+All checkpoints for the above results are saved in the `ckpts` folder and the results can be reproduced by running `python test.py` and specifying the `train_params.ENV` and `test_params.CKPT_FILE` parameters in `params.py` for the desired environment and checkpoint file.
 
 ## To-do
 - Train/test on further environments, including [Mujoco](http://www.mujoco.org/)

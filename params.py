@@ -15,6 +15,8 @@ class train_params:
         dummy_env = LunarLanderContinuousWrapper()
     elif ENV == 'BipedalWalker-v2':
         dummy_env = BipedalWalkerWrapper()
+    elif ENV == 'BipedalWalkerHardcore-v2':
+        dummy_env = BipedalWalkerWrapper(hardcore=True)
     else:
         raise Exception('Chosen environment does not have an environment wrapper defined. Please choose an environment with an environment wrapper defined, or create a wrapper for this environment in utils.env_wrapper.py')
      
@@ -29,7 +31,7 @@ class train_params:
     # Training parameters
     BATCH_SIZE = 256
     NUM_STEPS_TRAIN = 1000000       # Number of steps to train for
-    MAX_EP_LENGTH = 1000            # Maximum number of steps per episode
+    MAX_EP_LENGTH = 10000           # Maximum number of steps per episode
     REPLAY_MEM_SIZE = 1000000       # Soft maximum capacity of replay memory
     REPLAY_MEM_REMOVE_STEP = 200    # Check replay memory every REPLAY_MEM_REMOVE_STEP training steps and remove samples over REPLAY_MEM_SIZE capacity
     PRIORITY_ALPHA = 0.6            # Controls the randomness vs prioritisation of the prioritised sampling (0.0 = Uniform sampling, 1.0 = Greedy prioritisation)
@@ -69,7 +71,7 @@ class test_params:
     
     # Testing parameters
     NUM_EPS_TEST = 100                                      # Number of episodes to test for
-    MAX_EP_LENGTH = 1000                                    # Maximum number of steps per episode
+    MAX_EP_LENGTH = 10000                                   # Maximum number of steps per episode
     
     # Files/directories
     CKPT_DIR = './ckpts/' + ENV                             # Directory for saving/loading checkpoints
@@ -86,7 +88,7 @@ class play_params:
     
     # Play parameters
     NUM_EPS_PLAY = 5                                        # Number of episodes to play for
-    MAX_EP_LENGTH = 1000                                    # Maximum number of steps per episode
+    MAX_EP_LENGTH = 10000                                   # Maximum number of steps per episode
     
     # Files/directories
     CKPT_DIR = './ckpts/' + ENV                             # Directory for saving/loading checkpoints

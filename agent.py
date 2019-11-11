@@ -32,6 +32,8 @@ class Agent:
             self.env_wrapper = LunarLanderContinuousWrapper()
         elif env == 'BipedalWalker-v2':
             self.env_wrapper = BipedalWalkerWrapper()
+        elif env == 'BipedalWalkerHardcore-v2':
+            self.env_wrapper = BipedalWalkerWrapper(hardcore=True)
         else:
             raise Exception('Chosen environment does not have an environment wrapper defined. Please choose an environment with an environment wrapper defined, or create a wrapper for this environment in utils.env_wrapper.py')
         self.env_wrapper.set_random_seed(seed*(n_agent+1))

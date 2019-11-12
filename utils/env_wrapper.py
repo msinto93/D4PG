@@ -125,7 +125,7 @@ class BipedalWalkerWrapper(EnvWrapper):
         
         # Lower and upper bounds of critic value output distribution, these will vary with environment
         # V_min and V_max should be chosen based on the range of normalised reward values in the chosen env
-        self.v_min = -20.0
+        self.v_min = -40.0
         self.v_max = 40.0
         
     def normalise_state(self, state):

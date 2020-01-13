@@ -295,10 +295,11 @@ class Agent:
             for file in sorted(os.listdir(play_params.RECORD_DIR)):
                 # Load image
                 filename = play_params.RECORD_DIR + '/' + file
-                im = cv2.imread(filename)
-                images.append(im)
-                # Delete static image once loaded
-                os.remove(filename)
+                if filename.split('.')[-1] == 'jpg':
+                    im = cv2.imread(filename)
+                    images.append(im)
+                    # Delete static image once loaded
+                    os.remove(filename)
                  
             # Save as gif
             imageio.mimsave(play_params.RECORD_DIR + '/%s.gif' % play_params.ENV, images, duration=0.01)  
